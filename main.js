@@ -1,201 +1,182 @@
-// customElements.define('typing-indicator',
-//   class extends HTMLElement {
-//     constructor() {
-//       super();
+customElements.define('typing-indicator',
+  class extends HTMLElement {
+    constructor() {
+      super();
 
-//       const shadowRoot = this.attachShadow({ mode: 'open' });
+      const shadowRoot = this.attachShadow({ mode: 'open' });
 
-//       const container = document.createElement('div');
-//       container.setAttribute('class', 'container');
-//       const block = document.createElement('div');
-//       block.setAttribute('class', 'block');
-//       const dot = document.createElement('div');
-//       dot.setAttribute('class', 'dot');
-//       const dot2 = document.createElement('div');
-//       dot2.setAttribute('class', 'dot');
-//       const dot3 = document.createElement('div');
-//       dot3.setAttribute('class', 'dot');
-//       const style = document.createElement('style');
-//       style.textContent = `
-//         .block {
-//           align-items: center;
-//           display: flex;
-//           height: 17px;
-//         }
+      const container = document.createElement('div');
+      container.setAttribute('class', 'container');
+      const block = document.createElement('div');
+      block.setAttribute('class', 'block');
+      const dot = document.createElement('div');
+      dot.setAttribute('class', 'dot');
+      const dot2 = document.createElement('div');
+      dot2.setAttribute('class', 'dot');
+      const dot3 = document.createElement('div');
+      dot3.setAttribute('class', 'dot');
+      const style = document.createElement('style');
+      style.textContent = `
+        .block {
+          align-items: center;
+          display: flex;
+          height: 17px;
+        }
 
-//         .container .dot {
-//           background-color: #90949c;
-//         }
+        .container .dot {
+          background-color: #90949c;
+        }
 
-//         .container .user-dot {
-//           background-color: white;
-//         }
+        .container .user-dot {
+          background-color: white;
+        }
 
-//         .dot {
-//           animation: mercuryTypingAnimation 1.5s infinite ease-in-out;
-//           border-radius: 2px;
-//           display: inline-block;
-//           height: 4px;
-//           margin-right: 2px;
-//           width: 4px;
-//         }
+        .dot {
+          animation: mercuryTypingAnimation 1.5s infinite ease-in-out;
+          border-radius: 2px;
+          display: inline-block;
+          height: 4px;
+          margin-right: 2px;
+          width: 4px;
+        }
 
-//         @keyframes mercuryTypingAnimation{
-//           0%{
-//             transform:translateY(0px)
-//           }
-//           28%{
-//             transform:translateY(-5px)
-//           }
-//           44%{
-//             transform:translateY(0px)
-//           }
-//         }
+        @keyframes mercuryTypingAnimation{
+          0%{
+            transform:translateY(0px)
+          }
+          28%{
+            transform:translateY(-5px)
+          }
+          44%{
+            transform:translateY(0px)
+          }
+        }
 
-//         .dot:nth-child(1){
-//           animation-delay: 200ms;
-//         }
-//         .dot:nth-child(2){
-//           animation-delay: 300ms;
-//         }
-//         .dot:nth-child(3){
-//           animation-delay: 400ms;
-//         }
-//       `;
+        .dot:nth-child(1){
+          animation-delay: 200ms;
+        }
+        .dot:nth-child(2){
+          animation-delay: 300ms;
+        }
+        .dot:nth-child(3){
+          animation-delay: 400ms;
+        }
+      `;
 
-//       shadowRoot.append(style);
-//       block.append(dot);
-//       block.append(dot2);
-//       block.append(dot3);
-//       container.append(block);
-//       shadowRoot.append(container);
-//     }
+      shadowRoot.append(style);
+      block.append(dot);
+      block.append(dot2);
+      block.append(dot3);
+      container.append(block);
+      shadowRoot.append(container);
+    }
 
-//     connectedCallback() {
-//       const dots = this.getElementsByClassName("dot");
+    connectedCallback() {
+      const dots = this.getElementsByClassName("dot");
 
-//       const dotClass = this.getAttribute("dotclass");
+      const dotClass = this.getAttribute("dotclass");
 
-//       if (dotClass) {
-//         Array.from(dots).forEach((dot) => {
-//           // Do stuff here
-//           dot.setAttribute('class', dotClass);
-//         });
-//       }
-//     }
-//   });
+      if (dotClass) {
+        Array.from(dots).forEach((dot) => {
+          // Do stuff here
+          dot.setAttribute('class', dotClass);
+        });
+      }
+    }
+  });
 
 
-// customElements.define('chatbot-message-bot',
-//   class extends HTMLElement {
-//     constructor() {
-//       super();
-//     }
+customElements.define('chatbot-message-bot',
+  class extends HTMLElement {
+    constructor() {
+      super();
+    }
 
-//     connectedCallback() {
-//       const text = this.textContent;
-//       this.textContent = null;
+    connectedCallback() {
+      const text = this.textContent;
+      this.textContent = null;
 
-//       this.setAttribute('class', 'chatbot__message--bot');
+      this.setAttribute('class', 'chatbot__message--bot');
 
-//       const div = document.createElement('div');
-//       const typingIndicator = document.createElement('typing-indicator');
+      const div = document.createElement('div');
+      const typingIndicator = document.createElement('typing-indicator');
       
-//       // Initialize element with typing indicator
-//       div.append(typingIndicator);
-//       this.append(div);
-//     }
-//   });
+      // Initialize element with typing indicator
+      div.append(typingIndicator);
+      this.append(div);
+    }
+  });
 
-// customElements.define('chatbot-message-user',
-//   class extends HTMLElement {
-//     constructor() {
-//       super();
-//     }
+customElements.define('chatbot-message-user',
+  class extends HTMLElement {
+    constructor() {
+      super();
+    }
 
-//     connectedCallback() {
-//       this.textContent = null;
+    connectedCallback() {
+      this.textContent = null;
 
-//       this.setAttribute('class', 'chatbot__message--user');
+      this.setAttribute('class', 'chatbot__message--user');
 
-//       const div = document.createElement('div');
-//       const typingIndicator = document.createElement('typing-indicator');
-//       typingIndicator.setAttribute("dotclass", "user-dot");
+      const div = document.createElement('div');
+      const typingIndicator = document.createElement('typing-indicator');
+      typingIndicator.setAttribute("dotclass", "user-dot");
 
-//       // Initialize element with typing indicator
-//       div.append(typingIndicator);
-//       this.append(div);
-//     }
-//   });
+      // Initialize element with typing indicator
+      div.append(typingIndicator);
+      this.append(div);
+    }
+  });
 
 window.addEventListener("load", () => {
-  // const simulateChat = () => {
-  //   const chatbox = document.getElementById("chat-container");
-  //   let currSender = "bot";
+  const simulateChat = () => {
+    const chatbox = document.getElementById("chat-container");
+    let currSender = "bot";
   
-  //   const sendMessage = () => {
-  //     // clear previous messages
-  //     if (chatbox.children.length > 8) {
-  //       chatbox.removeChild(chatbox.firstChild);
-  //     }
+    const sendMessage = () => {
+      // clear previous messages
+      if (chatbox.children.length > 8) {
+        chatbox.removeChild(chatbox.firstChild);
+      }
 
-  //     const message = document.createElement('chatbot-message-' + currSender);
-  //     const typingIndicator = document.createElement('typing-indicator');
+      const message = document.createElement('chatbot-message-' + currSender);
+      const typingIndicator = document.createElement('typing-indicator');
   
-  //     message.append(typingIndicator);
+      message.append(typingIndicator);
 
-  //     // append message after a second or two pause
-  //     setTimeout(() => {
-  //       chatbox.append(message);
-
-  //       // switch sender
-  //       currSender = currSender === "user" ? "bot" : "user";
+      // append message after a second or two pause
+      setTimeout(() => {
+        chatbox.append(message);
+        // switch sender
+        currSender = currSender === "user" ? "bot" : "user";
     
-  //       // After a random number of seconds, replace
-  //       // with text content
-  //       setTimeout(() => {
-  //         message.innerHTML = "&nbsp;".padEnd(
-  //           Math.floor((Math.random() * 30) + 10) * 7, " &nbsp;"
-  //         );
+        // slide message in from the bottom
+        setTimeout(() => {
+            message.style.transform = `translateY(0px)`;
+            message.style.height = "unset";
+            message.style.margin = `8px 0px`;
+            message.style.padding = `8px 15px`;
+        }, 500);
+
+        // After a random number of seconds, replace
+        // with text content
+        setTimeout(() => {
+          message.innerHTML = "&nbsp;".padEnd(
+            Math.floor((Math.random() * 5) + 10) * 7, " &nbsp;"
+          );
     
-  //         // recursively call function to send another message
-  //         sendMessage();
-  //       },
-  //         // generate number between 1000-3500ms
-  //         Math.floor(Math.random() * 5000) + 3000
-  //       );
-  //     }, Math.floor(Math.random() * 2000));
+          // recursively call function to send another message
+          sendMessage();
+        },
+          // generate number between 1000-3500ms
+          Math.floor(Math.random() * 5000) + 3000
+        );
+      }, Math.floor(Math.random() * 2000));
+    }
+    sendMessage();
+  }
 
-  //   }
-  
-  //   sendMessage();
-  // }
-
-  // simulateChat();
-
-  // animate blob
-	// var radius = 8;
-	// TweenMax.staggerFromTo('.blob', 4 ,{
-	// 	cycle: {
-	// 		attr:function(i) {
-	// 			var r = i*90;
-	// 			return {
-	// 				transform:'rotate('+r+') translate('+radius+',0.1) rotate('+(-r)+')'
-	// 			}      
-	// 		}
-	// 	}  
-	// },{
-	// 	cycle: {
-	// 		attr:function(i) {
-	// 			var r = i*90+360;
-	// 			return {
-	// 				transform:'rotate('+r+') translate('+radius+',0.1) rotate('+(-r)+')'
-	// 			}      
-	// 		}
-	// 	},
-	// 	ease:Linear.easeNone,
-	// 	repeat:-1
-  // });
+  simulateChat();
   
   /* HAMBURGER MENU */
   // drop down menu on hamburger icon click

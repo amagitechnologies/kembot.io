@@ -90,7 +90,7 @@ a:hover {
 }
 
 .navigation__item--logo img {
-  height: 2rem;
+  height: 3rem;
   margin-right: 15px;
 }
 
@@ -150,9 +150,12 @@ h1.headline {
 
 .chatbot__element {
   display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 15px;
   overflow: hidden;
   border-radius: 20px;
-  min-height: 500px;
+  height: 500px;
   width: 250px;
   position: relative;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, .2);
@@ -192,9 +195,12 @@ h1.headline {
   align-self: flex-start;
   background-color: #f1f0f0;
   border-radius: 20px;
-  padding: 8px 15px;
-  margin: 8px 0px;
+  margin: 0;
+  padding: 0;
   position: relative;
+  height: 0;
+  transform: translateY(45px);
+  transition: all 0.2s ease-in;
 }
 
 .chatbot__message--user {
@@ -203,9 +209,12 @@ h1.headline {
   background-color: #0099ff;
   color: white;
   border-radius: 20px;
-  padding: 8px 15px;
-  margin: 8px 0px;
+  padding: 0;
+  margin: 0;
   position: relative;
+  height: 0;
+  transform: translateY(45px);
+  transition: all 0.2s ease-in;
 }
 
 .connector {
@@ -270,14 +279,13 @@ h1.headline {
   position: absolute;
   font-family: 'cooper-black-std', serif;
   line-height: 3.6rem;
-  text-transform: uppercase;
   text-align: right;
 }
 
 .contact {
   display: flex;
   margin-top: 5rem;
-  padding: 5rem 0;
+  padding: 5rem 1rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
