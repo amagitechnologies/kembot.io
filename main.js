@@ -157,6 +157,25 @@ window.addEventListener("load", () => {
     document.body.style.overflow = "";
   });
 
+  /* TESTIMONIALS */
+  const customerElements = document.querySelectorAll(".testimonials__customer");
+  customerElements.forEach(customerEl => {
+      customerEl.addEventListener("click", event => {
+          event.preventDefault();
+          
+          const currentSelected = document.querySelector(".testimonials__customer.clicked");
+          const currentQuote = document.querySelector(".testimonial__quote.active");
+          currentSelected.classList.remove("clicked");
+          currentQuote.classList.remove("active");
+
+          customerEl.classList.add("clicked");
+          const id = customerEl.id;
+
+          const quote = document.querySelector(`.testimonial__quote[for="${id}"]`);
+          quote.classList.add("active");
+      });
+  });
+
   /* CIRCUIT ANIMATION */
   class Dots {
     constructor(width, height, spacing) {

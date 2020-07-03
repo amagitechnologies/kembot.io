@@ -248,23 +248,22 @@
     </section>
     <section class="testimonials">
       <h1 class="headline">Customers</h1>
-      <div class="testimonial">
-        <button class="testimonial__button" tabindex="1">
-          <h2>
+      <div class="testimonials__container">
+        <div class="testimonials__customers">
+          <div id="tdmh" class="testimonials__customer clicked">
             Taytay Doctors Multispecialty Hospital
-          </h2>
-          <div class="testimonial__body">
-            <div class="testimonial__quote">
-              &ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&rdquo;
-            </div>
-            <div class="testimonial__links">
-              <a href="https://www.facebook.com/TaytayDoctorsMultispecialtyHospital" rel="external"><i class="fab fa-facebook-f"></i></a>
-              <a href="https://taytaydoctorshospital.com/" rel="nofollow external"><i class="fas fa-globe"></i></a>
-            </div>
           </div>
-        </button>
+          <p class="testimonials__comingsoon">Coming soon...</p>
+        </div>
+        <div class="testimonials__quote">
+          <i class="fas fa-quote-left"></i>
+          <!-- NOTE: Associate a quote with a customer by setting the "for" attribute to the customer element id -->
+          <div class="testimonial__quote active" for="tdmh">
+            <div class="testimonial__body">To better meet the demands of the population within our community, we needed a more efficient means to reach out to our current and potential patients. Kembot helps even those of modest means get improved access to TDMH’s quality and affordable healthcare services.</div>
+            <a class="testimonial__author" href="https://www.facebook.com/TaytayDoctorsMultispecialtyHospital" rel="nofollow external">Karla La Rosa, Hospital Administrator</a>
+          </div>
+        </div>
       </div>
-      <p class="testimonials__comingsoon">Coming soon...</p>
     </section>
     <section id="contact" class="contact">
       <h1 class="headline">Interested?</h1>
