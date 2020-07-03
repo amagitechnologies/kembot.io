@@ -6,20 +6,81 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Kembot | Healthcare Marketing Chatbot</title>
     <meta name="description" content="Communicate between patients and healthcare teams in real time." />
-
+    <link rel="canonical" href="https://kembot.io" />
+    <meta property="og:title" content="Kembot | Healthcare Marketing Chatbot">
+    <meta property="og:description" content="Communicate between patients and healthcare teams in real time.">
+    <meta property="og:image" content="https://kembot.io/assets/logo.png">
+    <meta property="og:url" content="https://kembot.io/">
+    <meta property="og:site_name" content="Kembot">
+    <meta property="fb:app_id" content="your_app_id" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org/",
+        "@type": "WebSite",
+        "name": "Kembot",
+        "datePublished": "2020-07-01",
+        "dateModified": "2020-07-02",
+        "description": "Communicate between patients and healthcare teams in real time.",
+        "alternativeHeadline": "Healthcare Marketing Chatbot",
+        "about": {
+          "@type": "Thing",
+          "name": "Kembot",
+          "description": "Communicate between patients and healthcare teams in real time.",
+        },
+        "author": {
+          "@type": "Organization",
+          "name": "AMAGI",
+          "email": "contact@amagi.io",
+          "telephone": "(02) 8816 7055"
+        },
+        "copyrightHolder": {
+          "@type": "Organization",
+          "name": "AMAGI",
+          "email": "contact@amagi.io",
+          "telephone": "(02) 8816 7055"
+        },
+        "copyrightYear": 2020,
+        "inLanguage": "en-US",
+        "url": "https://kembot.io"
+      }
+    </script>
+        
     <!-- RESOURCES -->
     <script src="./main.js"></script>
     <script src="https://kit.fontawesome.com/297c891af6.js" crossorigin="anonymous"></script>
     <link rel="icon" href="./assets/logo.svg" type="image/svg+xml" sizes="any"> 
     <link rel="stylesheet" href="https://use.typekit.net/syn8ymb.css">
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Nobile:wght@400;700&display=swap" rel="stylesheet">     <link href="./index.css" rel="stylesheet">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-96823676-11"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-96823676-11');
+    </script>
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-N5SF4J5');</script>
+    <!-- End Google Tag Manager -->
   </head>
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N5SF4J5"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    
     <div class="hero">
       <nav class="navigation">
         <a href="/">
           <div class="navigation__item--logo">
-            <img class="image__logo" src="assets/logo.svg" />
+            <img class="image__logo" src="assets/logo.svg" alt="8-bit Kembot logo" />
             Kembot
           </div>
         </a>
@@ -28,7 +89,7 @@
         </a>
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a class="navigation__item--link" href="/#about">Product</a>
+            <a class="navigation__item--link" href="/">Product</a>
           </li>
           <li class="navigation__item">
             <a class="navigation__item--link" href="/terms">Terms</a>
@@ -41,39 +102,39 @@
           </li>
         </ul>
       </nav>
-      <div id="about" class="hero__content">
-        <div class="chatbot">
+      <header id="about" class="hero__content">
+        <figure class="chatbot">
           <div id="chat-container" class="chatbot__element">
             <!-- Simulated chat messages will be added here -->
             <!-- <img src="assets/conversation-flow.gif" /> -->
           </div>
-        </div>
-        <div class="section__text">
+        </figure>
+        <article class="section__text">
           <h1 class="headline">Better Healthcare Communication with a Smart Chatbot</h1>
           <p class="subline">Connect your patients to your internal departments in real-time.</p>
           <a class="button" href="mailto:kembot@amagi.io">Request Demo</a>
-        </div>
-      </div>
+        </article>
+      </header>
     </div>
     <svg class="connector" width="40" height="100" viewBox="0 0 20 30">
       <path class="connector__line" d="M10 40 L10 -10"></path>
     </svg>
-    <div class="section circuit">
-      <div class="visual">
+    <section class="section circuit">
+      <figure class="visual">
         <div class="circuit__logo">Kembot</div>
         <canvas id='c'>
         </canvas>
-      </div>
-      <div class="section__text">
+      </figure>
+      <article class="section__text">
         <h2 class="headline">Advanced tech made simple.</h1>
         <p class="subline">Our system listens and responds to patients. Your team stays up-to-date. Everyone's happier.</p>
-      </div>
-    </div>
+        </article>
+    </section>
     <svg class="connector" width="40" height="80" viewBox="0 0 20 30">
       <path class="connector__line" d="M10 40 L10 -10"></path>
     </svg>
-    <div id="features" class="section">
-      <div class="spreadsheet">
+    <section id="features" class="section">
+      <figure class="spreadsheet">
         <div class="spreadsheet__element">
           <div class="table">
             <div class="table__row--header">
@@ -179,35 +240,49 @@
           </div>
           <div class="table__name">Finance</div>
         </div>
-      </div>
-      <div class="section__text">
+      </figure>
+      <article class="section__text">
         <h2 class="headline">Smarter spreadsheets, better organization.</h1>
         <p class="subline">Your team uses familiar spreadsheets to organize, send, and receive data to and from patients or other departments..</p>
+        </article>
+    </section>
+    <section class="testimonials">
+      <h1 class="headline">Customers</h1>
+      <div class="testimonial">
+        <button class="testimonial__button" tabindex="1">
+          <h2>
+            Taytay Doctors Multispecialty Hospital
+          </h2>
+          <div class="testimonial__body">
+            <div class="testimonial__quote">
+              &ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&rdquo;
+            </div>
+            <div class="testimonial__links">
+              <a href="https://www.facebook.com/TaytayDoctorsMultispecialtyHospital" rel="external"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://taytaydoctorshospital.com/" rel="nofollow external"><i class="fas fa-globe"></i></a>
+            </div>
+          </div>
+        </button>
       </div>
-    </div>
-    <div id="contact" class="contact">
+      <p class="testimonials__comingsoon">Coming soon...</p>
+    </section>
+    <section id="contact" class="contact">
       <h1 class="headline">Interested?</h1>
       <p>Send us an email. We'd love to talk to show you more.</p>
-      <a class="button" href="mailto:kembot@amagi.io">Request a Demo</a>
-    </div>
-    <div class="footer">
-      <div class="copyright">
-        <p>© 2020 Kembot by <a href="https://amagi.io">AMAGI</a>. All rights reserved.</p>
-      </div>
+      <a class="button" href="mailto:kembot@amagi.io" tabindex="1">Request a Demo</a>
+    </section>
+    <footer class="footer">
+      <small class="copyright">
+        <p>© 2020 Kembot by <a href="https://amagi.io" rel="external">AMAGI</a>. All rights reserved.</p>
+      </small>
       <div class="socialmedia">
-        <!-- <a class="socialmedia--button" href="https://instagram.com/kembot">
+        <a class="socialmedia--button" href="https://www.instagram.com/amagitech/">
           <i class="fab fa-instagram"></i>
         </a>
-        <a class="socialmedia--button" href="https://pinterest.com/kembot">
-          <i class="fab fa-pinterest-p"></i>
-        </a> -->
-        <a class="socialmedia--button" href="https://www.facebook.com/kembotchatbot/">
+        <a class="socialmedia--button" href="https://www.facebook.com/kembotchatbot/" rel="external">
           <i class="fab fa-facebook-f"></i>
         </a>
-        <!-- <a class="socialmedia--button" href="https://twitter.com/kembot">
-          <i class="fab fa-twitter"></i>
-        </a> -->
       </div>
-    </div>
+    </footer>
   </body>
 </html>

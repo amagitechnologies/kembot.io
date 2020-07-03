@@ -2,9 +2,9 @@ customElements.define('typing-indicator',
   class extends HTMLElement {
     constructor() {
       super();
+    }
 
-      const shadowRoot = this.attachShadow({ mode: 'open' });
-
+    connectedCallback() {
       const container = document.createElement('div');
       container.setAttribute('class', 'container');
       const block = document.createElement('div');
@@ -15,73 +15,12 @@ customElements.define('typing-indicator',
       dot2.setAttribute('class', 'dot');
       const dot3 = document.createElement('div');
       dot3.setAttribute('class', 'dot');
-      const style = document.createElement('style');
-      style.textContent = `
-        .block {
-          align-items: center;
-          display: flex;
-          height: 17px;
-        }
 
-        .container .dot {
-          background-color: #90949c;
-        }
-
-        .container .user-dot {
-          background-color: white;
-        }
-
-        .dot {
-          animation: mercuryTypingAnimation 1.5s infinite ease-in-out;
-          border-radius: 2px;
-          display: inline-block;
-          height: 4px;
-          margin-right: 2px;
-          width: 4px;
-        }
-
-        @keyframes mercuryTypingAnimation{
-          0%{
-            transform:translateY(0px)
-          }
-          28%{
-            transform:translateY(-5px)
-          }
-          44%{
-            transform:translateY(0px)
-          }
-        }
-
-        .dot:nth-child(1){
-          animation-delay: 200ms;
-        }
-        .dot:nth-child(2){
-          animation-delay: 300ms;
-        }
-        .dot:nth-child(3){
-          animation-delay: 400ms;
-        }
-      `;
-
-      shadowRoot.append(style);
       block.append(dot);
       block.append(dot2);
       block.append(dot3);
       container.append(block);
-      shadowRoot.append(container);
-    }
-
-    connectedCallback() {
-      const dots = this.getElementsByClassName("dot");
-
-      const dotClass = this.getAttribute("dotclass");
-
-      if (dotClass) {
-        Array.from(dots).forEach((dot) => {
-          // Do stuff here
-          dot.setAttribute('class', dotClass);
-        });
-      }
+      this.append(container);
     }
   });
 
@@ -131,7 +70,7 @@ customElements.define('chatbot-message-user',
 window.addEventListener("load", () => {
   const simulateChat = () => {
     const chatbox = document.getElementById("chat-container");
-    let currSender = "bot";
+    let currSender = "user";
   
     const sendMessage = () => {
       // clear previous messages
