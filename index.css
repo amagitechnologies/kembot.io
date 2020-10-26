@@ -1,3 +1,14 @@
+@font-face { 
+  font-family: Futura; 
+  src: url('assets/fonts/futura-light.ttf'); 
+}
+
+@font-face { 
+  font-family: Futura; 
+  src: url('assets/fonts/futura-heavy.ttf');
+  font-weight: bold;
+} 
+
 :root {
   --main-bg-color: coral;
 }
@@ -11,7 +22,7 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'Futura', sans-serif;
   overflow-x: hidden;
   color: #313131;
 }
@@ -23,7 +34,7 @@ a {
 }
 
 a:hover {
-  color: #0099ff;
+  color: #17B6C1;
 }
 
 .hero {
@@ -83,14 +94,16 @@ navigation-menu {
   align-items: center;
   font-size: 2rem;
   list-style-type: none;
-  color: #09f;
+  color: #000;
   margin: 0;
-  padding: 0;
-  letter-spacing: -0.6px;
-  font-family: 'cooper-black-std', serif;
+  padding: 0 4px;
+  padding-bottom: 8px;
+  letter-spacing: 8px;
+  font-family: 'Futura', sans-serif;
   font-weight: 400;
   line-height: 1.6rem;
   text-align: right;
+  border-bottom: 4px solid #17B6C1;
 }
 
 .navigation__item--logo img {
@@ -100,7 +113,7 @@ navigation-menu {
 
 .logo__kem {
   display: inline;
-  color: #09f;
+  color: #17B6C1;
 }
 
 .hero__content {
@@ -137,7 +150,7 @@ navigation-menu {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #09f;
+  background-color: #17B6C1;
   color: white;
   height: 2rem;
   width: 2rem;
@@ -148,9 +161,8 @@ navigation-menu {
 .headline {
   width: fit-content;
   font-size: 3rem;
-  font-family: 'cooper-black-std', serif;
+  font-family: 'Futura', sans-serif;
   font-weight: normal;
-  letter-spacing: -0.6px;
   line-height: 3.1rem;
   margin: 0;
 }
@@ -182,8 +194,8 @@ h1.headline {
   padding: 15px;
   overflow: hidden;
   border-radius: 20px;
-  height: 50vh;
-  width: calc(50vh / 1.8);
+  height: 60vh;
+  width: calc(56vh / 1.8);
   position: relative;
   box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, .1);
 }
@@ -233,7 +245,7 @@ h1.headline {
 .chatbot__message--user {
   max-width: 80%;
   align-self: flex-end;
-  background-color: #0099ff;
+  background-color: #17B6C1;
   color: white;
   border-radius: 20px;
   padding: 0;
@@ -245,14 +257,14 @@ h1.headline {
 }
 
 .connector {
-  margin: 4vh auto;
+  margin: 2vh auto;
   height: 150px;
   overflow: hidden;
   display: block;
 }
 
 .connector__line {
-  stroke: #0099ff;
+  stroke: #17B6C1;
   stroke-width: 3px;
   stroke-linecap: round;
   stroke-dasharray: 0.5px 10px;
@@ -295,9 +307,7 @@ h1.headline {
 }
 
 .circuit video {
-  width: 25vw;
-  box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, .1);
-  border-radius: 20px;
+  width: 30vw;
 }
 
 .circuit canvas {
@@ -306,12 +316,12 @@ h1.headline {
 
 .circuit__logo {
   z-index: 5;
-  color: #09f;
+  color: #17B6C1;
   text-shadow: 0px 20px 50px 0px rgba(0, 0, 0, .1);
   letter-spacing: -0.8px;
   font-size: 4.5rem;
   position: absolute;
-  font-family: 'cooper-black-std', serif;
+  font-family: 'Futura', sans-serif;
   line-height: 3.6rem;
   text-align: right;
 }
@@ -326,16 +336,15 @@ h1.headline {
 
 .button {
   margin-top: 15px;
-  padding: 10px 30px;
-  background-color: #0099ff;
+  padding: 15px 30px;
+  background-color: #17B6C1;
   color: white;
-  border-radius: 30px;
   transition: all 0.2s ease-out;
 }
 
 .button:hover {
   color: white;
-  transform: translateY(-4px);
+  background-color: #3dd6e0;
 }
 
 
@@ -423,7 +432,7 @@ h1.headline {
  }
 
  .table__row--header {
-   background: #0099ff;
+   background: #17B6C1;
    color: white;
  }
 
@@ -438,8 +447,8 @@ h1.headline {
  }
 
  .table__data--header {
-   background: #0099ff;
-   border-color: #0988dd;
+   background: #17B6C1;
+   border-color: #17B6C1;
    text-align: center;
  }
 
@@ -471,7 +480,6 @@ h1.headline {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 100%;
   margin-left: 20px;
   height: 2rem;
   width: 2rem;
@@ -556,21 +564,13 @@ chatbot-message-bot .dot {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 4rem;
 }
 
 .comparison__table {
   margin: 3rem;
   border-collapse: collapse;
   box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, .1);
-  border-radius: 20px;
-}
-
-.comparison__table thead tr th:last-of-type {
-  border-top-right-radius: 20px;
-}
-
-.comparison__table tbody tr:last-of-type td:last-of-type {
-  border-bottom-right-radius: 20px;
 }
 
 .comparison__header,
@@ -578,13 +578,11 @@ chatbot-message-bot .dot {
 .comparison__header--kembot {
   font-weight: bold;
   text-align: center;
-  padding: 0.5rem;
+  padding: 1rem;
 }
 
 .comparison__cell {
-  padding: 0.4rem 0;
-  padding-left: 1rem;
-  padding-right: 3rem;
+  padding: 0.45rem 1.5rem;
 }
 
 .comparison__cell--competitor,
@@ -592,14 +590,9 @@ chatbot-message-bot .dot {
   text-align: center;
 }
 
-.comparison__header--competitor,
-.comparison__cell--competitor {
-  background: #f1f0f0;
-}
-
 .comparison__header--kembot,
 .comparison__cell--kembot {
-  background: #09f;
+  background-color: #17B6C1;
   color: white;
 }
 
@@ -607,7 +600,7 @@ chatbot-message-bot .dot {
   padding: 20vh 1rem;
   flex: 1;
   min-height: 50vh;
-  background-color: #f1f0f0;
+  background-color: #e4fdff;
 }
 
 .testimonials__comingsoon {
@@ -645,7 +638,7 @@ chatbot-message-bot .dot {
 }
 
 .testimonials__customer.clicked {
-  background: #0099ff;
+  background: #e6fff7;
   color: white;
 }
 
@@ -667,7 +660,7 @@ chatbot-message-bot .dot {
   position: absolute;
   top: 0.8rem;
   left: 0.8rem;
-  color: #09f;
+  color: #17B6C1;
   font-size: 1.5rem;
 }
 
@@ -766,7 +759,7 @@ chatbot-message-bot .dot {
   }
 
   .navigation__item--link {
-    font-weight: 700;
+    font-weight: normal;
     font-size: 1.3rem;
   }
 
@@ -803,8 +796,8 @@ chatbot-message-bot .dot {
 
   .spreadsheet__element:nth-child(2) .table__row--header,
   .spreadsheet__element:nth-child(2) .table__data--header {
-    background: #0099ff;
-    border-color: #0988dd;
+    background: #17B6C1;
+    border-color: #17B6C1;
     color: white;
     text-align: center;
   }

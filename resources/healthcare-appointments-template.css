@@ -1,0 +1,179 @@
+header, section {
+    width: 50%;
+}
+
+button {
+    margin-left: .5rem;
+    padding: .8rem;
+    border: 1px solid #17B6C1;
+    color: #fff;
+    background-color: #17B6C1;
+    font-family: 'Futura', sans-serif;
+    font-size: 1rem;
+    transition: all 0.2s ease-out;
+}
+
+button:hover {
+    border-color: #3dd6e0;
+    background-color: #3dd6e0;
+}
+
+sub {
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+img {
+    max-width: 35vw;
+}
+
+h1.headline {
+    font-size: 2.8rem;
+}
+
+h2.promoHeadline {
+    text-align: center;
+    width: 70%;
+}
+
+h3.promoSubline {
+    width: fit-content;
+    font-size: 2rem;
+    font-family: 'Futura', sans-serif;
+    font-weight: 700;
+    line-height: 2.1rem;
+}
+
+figure, .spreadsheet {
+    display: flex;
+    justify-content: right;
+    width: 50%;
+    transform: none;
+}
+
+.spreadsheet__element:first-child {
+    position: static;
+    margin-left: 2rem;
+}
+
+input[type=email] {
+    padding: .8rem;
+    width: 14rem;
+    border: 1px solid #c4c4c4;
+    text-align: left;
+    font-family: 'Futura', sans-serif;
+    font-size: 1rem;
+}
+
+.email-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+input[type=email]:hover {
+    border: 1px solid #3dd6e0;
+}
+
+.table {
+    width: 25rem;
+}
+
+.table {
+   display: table;
+   border-collapse: collapse;
+   box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, .1);
+   overflow: hidden;
+   margin: 1rem;
+  }
+
+ .table__row, .table__row--header {
+   display: table-row;
+ }
+
+ .table__row--header {
+   background: #17B6C1;
+   color: white;
+ }
+
+ .table__data, .table__data--header {
+   box-sizing: content-box;
+   display: table-cell;
+   background: white;
+   border: 1px solid #f1f0f0;
+   height: 1.2rem;
+   width: 150px;
+   padding: 2px 5px;
+ }
+
+ .table__data--header {
+   background: #17B6C1;
+   border-color: #17B6C1;
+   text-align: center;
+ }
+
+ .table__data:first-child,
+ .table__data--header:first-child {
+   background: #f1f0f0;
+   border-color: #d9d9d9;
+   width: 20px;
+   text-align: right;
+ }
+
+#cta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 15rem;
+    margin-bottom: 4rem;
+}
+
+@media only screen and (max-width: 600px) {
+
+    input[type=email] {
+        width: 50%;
+        padding: .4rem;
+        margin-right: 0;
+        font-size: 1rem;
+    }
+
+    button {
+        margin-left: 0;
+        font-size: 1rem;
+    }
+
+    img {
+        display: none;
+    }
+
+    .navigation {
+        margin-bottom: 2rem;
+    }
+
+    .section {
+        margin: 3rem 0;
+    }
+
+    .subline {
+        margin: 1rem 0;
+    }
+
+    .comparison__table {
+        margin: 1.5rem;
+    }
+
+    .button {
+        margin-top: 0;
+    }
+
+    .footer {
+        width: 90%;
+        margin: 1rem auto;
+    }
+
+    #cta {
+        margin: 0 2rem;
+    }
+}

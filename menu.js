@@ -11,8 +11,7 @@ customElements.define(
       nav.innerHTML = `
           <a href="/">
             <div class="navigation__item--logo">
-              <img class="image__logo" src="assets/logo.svg" />
-              Kembot
+              KEMBOT
             </div>
           </a>
           <a class="navigation__hamburger">
