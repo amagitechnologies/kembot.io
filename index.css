@@ -34,7 +34,7 @@ a {
 }
 
 a:hover {
-  color: #17B6C1;
+  color: #CC0E74;
 }
 
 .hero {
@@ -103,7 +103,6 @@ navigation-menu {
   font-weight: 400;
   line-height: 1.6rem;
   text-align: right;
-  border-bottom: 4px solid #17B6C1;
 }
 
 .navigation__item--logo img {
@@ -113,7 +112,7 @@ navigation-menu {
 
 .logo__kem {
   display: inline;
-  color: #17B6C1;
+  color: #CC0E74;
 }
 
 .hero__content {
@@ -150,7 +149,7 @@ navigation-menu {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #17B6C1;
+  background-color: #CC0E74;
   color: white;
   height: 2rem;
   width: 2rem;
@@ -245,7 +244,7 @@ h1.headline {
 .chatbot__message--user {
   max-width: 80%;
   align-self: flex-end;
-  background-color: #17B6C1;
+  background-color: #CC0E74;
   color: white;
   border-radius: 20px;
   padding: 0;
@@ -264,7 +263,7 @@ h1.headline {
 }
 
 .connector__line {
-  stroke: #17B6C1;
+  stroke: #CC0E74;
   stroke-width: 3px;
   stroke-linecap: round;
   stroke-dasharray: 0.5px 10px;
@@ -316,7 +315,7 @@ h1.headline {
 
 .circuit__logo {
   z-index: 5;
-  color: #17B6C1;
+  color: #CC0E74;
   text-shadow: 0px 20px 50px 0px rgba(0, 0, 0, .1);
   letter-spacing: -0.8px;
   font-size: 4.5rem;
@@ -337,14 +336,14 @@ h1.headline {
 .button {
   margin-top: 15px;
   padding: 15px 30px;
-  background-color: #17B6C1;
+  background-color: #CC0E74;
   color: white;
   transition: all 0.2s ease-out;
 }
 
 .button:hover {
   color: white;
-  background-color: #3dd6e0;
+  background-color: #ff69bd;
 }
 
 
@@ -432,7 +431,7 @@ h1.headline {
  }
 
  .table__row--header {
-   background: #17B6C1;
+   background: #CC0E74;
    color: white;
  }
 
@@ -447,8 +446,8 @@ h1.headline {
  }
 
  .table__data--header {
-   background: #17B6C1;
-   border-color: #17B6C1;
+   background: #CC0E74;
+   border-color: #CC0E74;
    text-align: center;
  }
 
@@ -592,7 +591,7 @@ chatbot-message-bot .dot {
 
 .comparison__header--kembot,
 .comparison__cell--kembot {
-  background-color: #17B6C1;
+  background-color: #CC0E74;
   color: white;
 }
 
@@ -600,7 +599,7 @@ chatbot-message-bot .dot {
   padding: 20vh 1rem;
   flex: 1;
   min-height: 50vh;
-  background-color: #e4fdff;
+  background-color: #ffdbef;
 }
 
 .testimonials__comingsoon {
@@ -660,7 +659,7 @@ chatbot-message-bot .dot {
   position: absolute;
   top: 0.8rem;
   left: 0.8rem;
-  color: #17B6C1;
+  color: #CC0E74;
   font-size: 1.5rem;
 }
 
@@ -796,8 +795,8 @@ chatbot-message-bot .dot {
 
   .spreadsheet__element:nth-child(2) .table__row--header,
   .spreadsheet__element:nth-child(2) .table__data--header {
-    background: #17B6C1;
-    border-color: #17B6C1;
+    background: #CC0E74;
+    border-color: #CC0E74;
     color: white;
     text-align: center;
   }

@@ -46,15 +46,30 @@
 
       gtag("config", "UA-96823676-11");
     </script>
+
+    <!-- Google Tag Manager -->
+    <script>
+      (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-MDFSX3X");
+    </script>
+    <!-- End Google Tag Manager -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org/",
         "@type": "WebSite",
         "@id": "https://kembot.io",
-        "url": "https://lembot.io",
+        "url": "https://kembot.io/healthcare-appointments-template.html",
         "name": "Kembot | Free Healthcare Appointment Template",
         "datePublished": "2020-10-26",
-        "dateModified": "2020-10-26",
+        "dateModified": "2020-11-12",
         "description": "Download the FREE Healthcare Appointments Spreadsheet Template for Google Sheets or Excel",
         "alternativeHeadline": "FREE Healthcare Appointments Spreadsheet Template",
         "logo": "https://kembot.io/assets/logo.png",
@@ -80,7 +95,8 @@
           "email": "contact@amagi.io"
         },
         "copyrightYear": 2020,
-        "inLanguage": "en-US"
+        "inLanguage": "en-US",
+        "url": "https://kembot.io"
       }
     </script>
   </head>
@@ -89,19 +105,18 @@
     <!-- Google Tag Manager (noscript) -->
     <noscript
       ><iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-N5SF4J5"
+        src="https://www.googletagmanager.com/ns.html?id=GTM-MDFSX3X"
         height="0"
         width="0"
         style="display:none;visibility:hidden"
       ></iframe
     ></noscript>
     <!-- End Google Tag Manager (noscript) -->
-
     <div class="hero">
       <navigation-menu></navigation-menu>
       <header id="about" class="hero__content">
-        <figure>
-          <img src="../assets/appointments.jpg" alt="Visual of spreadsheet with appointment details" />
+        <figure class="hero-visual">
+          <img src="../assets/appointments.png" alt="Visual of spreadsheet with appointment details" />
         </figure>
         <article class="section__text">
           <sub>Free Resource</sub>
@@ -119,8 +134,8 @@
         </article>
       </header>
     </div>
-    <section id="charts"  class="section">
-      <figure>
+    <section id="charts" class="section">
+      <figure class="chart-visual">
         <img src="../assets/charts.png" alt="Visual of analytics like common patient ages, doctors and days" />
       </figure>
       <article class="section__text">

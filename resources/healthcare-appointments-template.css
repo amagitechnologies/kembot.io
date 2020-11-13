@@ -5,17 +5,17 @@ header, section {
 button {
     margin-left: .5rem;
     padding: .8rem;
-    border: 1px solid #17B6C1;
+    border: 1px solid #CC0E74;
     color: #fff;
-    background-color: #17B6C1;
+    background-color: #CC0E74;
     font-family: 'Futura', sans-serif;
     font-size: 1rem;
     transition: all 0.2s ease-out;
 }
 
 button:hover {
-    border-color: #3dd6e0;
-    background-color: #3dd6e0;
+    border-color: #CC0E74;
+    background-color: #CC0E74;
 }
 
 sub {
@@ -29,6 +29,7 @@ img {
 
 h1.headline {
     font-size: 2.8rem;
+    line-height: 3rem;
 }
 
 h2.promoHeadline {
@@ -44,16 +45,22 @@ h3.promoSubline {
     line-height: 2.1rem;
 }
 
-figure, .spreadsheet {
-    display: flex;
-    justify-content: right;
-    width: 50%;
-    transform: none;
-}
-
 .spreadsheet__element:first-child {
     position: static;
     margin-left: 2rem;
+}
+
+.hero-visual {
+    width: 50%;
+    margin-right: 0;
+    display: flex;
+    justify-content: right;
+}
+
+.chart-visual {
+    width: 100%;
+    display: flex;
+    justify-content: right;
 }
 
 input[type=email] {
@@ -72,7 +79,7 @@ input[type=email] {
 }
 
 input[type=email]:hover {
-    border: 1px solid #3dd6e0;
+    border: 1px solid #CC0E74;
 }
 
 .table {
@@ -92,7 +99,7 @@ input[type=email]:hover {
  }
 
  .table__row--header {
-   background: #17B6C1;
+   background: #CC0E74;
    color: white;
  }
 
@@ -107,8 +114,8 @@ input[type=email]:hover {
  }
 
  .table__data--header {
-   background: #17B6C1;
-   border-color: #17B6C1;
+   background: #CC0E74;
+   border-color: #CC0E74;
    text-align: center;
  }
 
@@ -157,7 +164,7 @@ input[type=email]:hover {
     }
 
     .subline {
-        margin: 1rem 0;
+        margin: 1rem 0rem;
     }
 
     .comparison__table {
